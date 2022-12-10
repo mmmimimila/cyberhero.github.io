@@ -1,0 +1,59 @@
+
+            <div class="registration">
+              <div class="registration__card">
+              <h1>Регистрация</h1>
+              <form
+                class="registration__form"
+                [formGroup]="registrationForm"
+                (ngSubmit)="onSubmit()"
+              >
+                
+                  <tui-input formControlName="email" class="registration__form-field">
+                    Введите email
+                    <input
+                        tuiTextfield
+                        type="email"
+                        name="email"
+                    />
+                </tui-input>
+
+          
+                  <tui-error
+                    style="margin-bottom: 10px"
+                    [error]="errors('email')"
+                  ></tui-error>
+
+                  <tui-input-password
+        formControlName="password"
+        class="registration__form-field"
+    >
+        Введите пароль
+        <input
+            tuiTextfield
+        />
+    </tui-input-password>
+    <tui-error
+    style="margin-bottom: 10px"
+    [error]="errors('password')"></tui-error>
+
+  <tui-input-password
+  formControlName="password_confirmation"
+  class="registration__form-field"
+>
+  Повторите пароль
+  <input
+      tuiTextfield
+  />
+</tui-input-password>
+<tui-error
+style="margin-bottom: 10px"
+[error]="errors('password_confirmation')" 
+></tui-error>
+
+            
+                
+                <button tuiButton appearance="primary" size="l" class="registration__form-button">Зарегистрироваться</button>
+              </form>
+            </div>
+            </div>
+

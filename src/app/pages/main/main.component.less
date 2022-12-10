@@ -1,0 +1,47 @@
+.container{
+  height: 100vh;
+}
+.profile{
+  width: fit-content;
+    height: 300px;
+    background-color: #92535317;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30vh auto;
+    &__image{
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    &__name{
+      font-size: 25px;
+      line-height: normal;
+      padding: 10px 60px 0 40px;
+      span{
+        transform: scaleX(-1);
+        display: inline-block;
+        padding-left: 10px;
+      }
+        .shake {
+          display: inline-table;
+          animation: shake-hand-animation 1s infinite;
+          transform-origin: right bottom;
+        }
+        
+        @keyframes shake-hand-animation {
+          0% {
+            transform: rotate(0deg);
+          }
+          50% {
+            transform: rotate(90deg);
+          }
+          100% {
+            transform: rotate(0deg);
+          }
+        }
+      
+    }
+}

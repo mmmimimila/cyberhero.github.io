@@ -1,0 +1,28 @@
+<div class="registration">
+<div class="registration__card">
+  <p>На Вашу почту {{authService.email | async}} был выслан код подтверждения</p>
+<div>
+  <form
+  [formGroup]="confirmationCodeForm"
+  (ngSubmit)="onSubmit()"
+  class="registration__form"
+>
+  <tui-input
+    formControlName="code"
+    class="registration__form-field"
+>
+Введите код
+<input
+tuiTextfield
+minlength="4"
+maxlength="4">
+</tui-input>
+<tui-error
+style="margin-bottom: 10px"
+[error]="error()"
+></tui-error>
+<button tuiButton appearance="primary" size="l" class="registration__form-button">Подтвердить</button>
+</form>
+</div>
+</div>
+</div>

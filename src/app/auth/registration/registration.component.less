@@ -1,0 +1,50 @@
+
+
+.registration {
+  background: url("../../../assets/images/auth-image.jpg") no-repeat;
+    height: 100vh;
+    overflow: auto;
+    background-size: cover;
+
+  &__card{
+    width: 500px;
+    height: fit-content;
+    background-color: rgba(255, 249, 249, 0.8);
+    border-radius: 5px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    bottom: 0;
+    left: 0;
+    @media (max-width: 1024px) {
+      width: 400px;
+      right: 30%;
+    }
+  }
+  h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+  }
+  &__form {
+    width: 100%;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 25px 25px 25px;
+
+    &-field {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+    &-button {
+      width: 100%;
+      text-transform: uppercase;
+    }
+  }
+  }
+
+
